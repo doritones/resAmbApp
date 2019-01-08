@@ -1,0 +1,27 @@
+{
+  "name": "resambapp",
+  "version": "1.0.0",
+  "description": "Initial version of environmental watching in BR",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/doritones/resAmbApp.git"
+  },
+  "keywords": [
+    "environmental watching",
+    "public policies",
+    "Brazil"
+  ],
+  "author": "Diverse",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/doritones/resAmbApp/issues"
+  },
+  "homepage": "https://github.com/doritones/resAmbApp#readme",
+  "dependencies": {
+    "bootstrap": "^4.2.1"
+  }
+}
