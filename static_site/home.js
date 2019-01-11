@@ -4,7 +4,7 @@ let timer = () => {
   const dateStart = new Date("2019-01-01");
   const curDate = new Date();
   const timeGap = Math.abs(curDate - dateStart)/1000;
-  const currentDef = Math.round(timeGap + 0.03);
+  const currentDef = (timeGap * 0.03).toFixed(2);
   document.getElementById("timer").innerHTML = currentDef;
 }
 
