@@ -1,30 +1,18 @@
 @import url('https://fonts.googleapis.com/css?family=Patua+One');
 
 body{
+  overflow-x:hidden;
   font-family: 'Patua One', cursive;
-}
-
-.container-fluid{
-  padding: 0;
-}
-
-.row {
-  margin: 0;
+  padding-top: 35px;
 }
 
 #logo {
   color: lightgrey;
-  padding-left: 20px;
-}
-
-#menu {
-  padding-right: 20px;
 }
 
 .navbar {
   text-transform: uppercase;
   font-size: 1.3rem;
-  padding: 8px 0 8px 0;
 }
 
 .home-inner{
@@ -35,33 +23,27 @@ body{
   background-position: top;
   background-repeat: no-repeat;
   background-size: 100%;
-}
-
-@media only screen and (max-width: 1500px) {
-    .home-inner{
-      background-size: 180%;
-  }
-}
-
-@media only screen and (max-width: 860px) {
-    .home-inner{
-      background-size: 350%;
-  }
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
 }
 
 .caption {
   text-transform: uppercase;
   color: #fff;
-  position: absolute;
-  top: 35%;
   width: 50vw;
   text-align: center;
-  margin-left: 25%;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: hsla(0,
+    0%, 0%, 0.4);
+  border-radius: 20px;
+  padding: 10px;
 }
 
 #main-text {
   font-size: 4rem;
-
 }
 
 #timer {
@@ -73,7 +55,6 @@ body{
   width: 100vw;
   justify-content: center;
   align-items: center;
-
 }
 
 #aboutus {
@@ -86,4 +67,43 @@ body{
 
 #aboutus-content {
   width: 50vw;
+}
+
+@media only screen and (max-width: 1700px) {
+    .home-inner{
+      background-size: 220%;
+  }
+    #main-text {
+      font-size: 3rem;
+  }
+    #timer {
+      font-size: 4.5rem;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+     body {
+      padding-top: 0px;
+  }
+     #logo {
+      font-size: 1rem;
+  }
+    .home-inner{
+      background-size: 350%;
+  }
+    #main-text {
+      font-size: 1.5rem;
+  }
+    #timer {
+      font-size: 2rem;
+  }
+
+    #aboutus {
+      height: auto;
+  }
+    #aboutus-content {
+      width: 80vw;
+      padding-top: 60px;
+      padding-bottom: 20px;
+  }
 }

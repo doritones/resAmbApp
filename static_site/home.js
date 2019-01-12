@@ -9,3 +9,5 @@ let timer = () => {
 }
 
 setInterval(timer, 1000);
+
+//clearInterval
