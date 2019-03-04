@@ -4,7 +4,7 @@ const createNode = (element) => document.createElement(element); // Create the t
 const append = (parent, el) => parent.appendChild(el); //Append the element to the parent
 
 fetch("https://api.airtable.com/v0/appGU1IvnOZqFFiCh/Table%201?view=Grid%20view", {
-    headers: { Authorization: "Bearer "+ "keyvwuNlf64WbA2YK" } //fix authorization exposure
+    headers: { Authorization: "Bearer "+ process.env.AIRTABLE_API_KEY } //fix authorization exposure
   })
   .then(data => data.json())
   .then(data => {
