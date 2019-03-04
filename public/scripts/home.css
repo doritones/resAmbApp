@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css?family=Patua+One");
+
+body {
+  overflow-x: hidden;
+  font-family: "Patua One", cursive;
+}
+
+#logo {
+  color: lightgrey;
+}
+
+.navbar {
+  text-transform: uppercase;
+  font-size: 1.3rem;
+}
+
+.home-inner {
+  background-image: url("https://d3w2mpp70f6o8z.cloudfront.net/media/images/Amazon-rainforest-trees-ThinkstockPhotos-Khlong.original.jpg");
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.caption {
+  text-transform: uppercase;
+  color: #fff;
+  width: 50vw;
+  text-align: center;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: hsla(0, 0%, 0%, 0.4);
+  border-radius: 20px;
+  padding: 10px;
+}
+
+#main-text {
+  font-size: 4rem;
+}
+
+#timer {
+  font-size: 6rem;
+}
+
+@media only screen and (max-width: 1700px) {
+  .home-inner {
+    background-size: 220%;
+  }
+  #main-text {
+    font-size: 3rem;
+  }
+  #timer {
+    font-size: 4.5rem;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  body {
+    padding-top: 0px;
+  }
+  #logo {
+    font-size: 1rem;
+  }
+  .home-inner {
+    background-size: 350%;
+  }
+  #main-text {
+    font-size: 1.5rem;
+  }
+  #timer {
+    font-size: 2rem;
+  }

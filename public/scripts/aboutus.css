@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css?family=Patua+One");
+
+body {
+  overflow-x: hidden;
+  font-family: "Patua One", cursive;
+}
+
+#logo {
+  color: lightgrey;
+}
+
+.navbar {
+  text-transform: uppercase;
+  font-size: 1.3rem;
+}
+
+#aboutus {
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  background-color: darkgrey;
+  position: relative;
+}
+
+#aboutus-content {
+  width: 50vw;
+}
+
+
+
+@media only screen and (max-width: 767px) {
+  body {
+    padding-top: 0px;
+  }
+  #logo {
+    font-size: 1rem;
+  }
+
+  #aboutus {
+    height: auto;
+  }
+  #aboutus-content {
+    width: 80vw;
+    padding-top: 60px;
+    padding-bottom: 20px;
+  }
+}
